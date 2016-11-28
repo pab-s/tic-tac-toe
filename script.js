@@ -19,6 +19,7 @@ var turn = 0;
 var userName = "";
 var scorePc = 0;
 var scoreHuman = 0;
+var gameOver = false;
 
 
 // gets values from intro and start game
@@ -82,8 +83,10 @@ var pcUpdateBoard = function(x, y) {
 }
 
 var pcTurn = function() {
+  if(!gameOver) {
   smartPlay();
   gameWinner(pcLetter);
+  }
 }
 
 // AI?
@@ -230,7 +233,9 @@ var winnerFeedBack = function (player) {
     scoreBoardPc.innerHTML = scorePc;
   } else {
     displayFeedback(userName);
-    scoreBoardHuman.innerHTML = scoreHuman++;
+    scoreHuman++;
+    scoreBoardHuman.innerHTML = scoreHuman;
+    gameOver = true;
   }
 }
 // display feedback
@@ -248,6 +253,7 @@ var btnReset = function() {
   });
 }
 var resetGame = function() {
+  gameOver = false;
   turn = 0;
   main = [[false, false, false],[false, false, false],[false, false, false]];
   for (var i = 0; i < main.length; i++) {
