@@ -21,7 +21,6 @@ var scorePc = 0;
 var scoreHuman = 0;
 var gameOver = false;
 
-
 // gets values from intro and start game
 btn.addEventListener("click", function() {
   var input = document.getElementsByTagName("input");
@@ -68,7 +67,7 @@ var updateBoard = function(e) {
     main[row][num] = humanLetter;
     turn++
     gameWinner(humanLetter);
-    pcTurn();
+    setTimeout(function(){pcTurn()}, 700);
   }
 }
 
