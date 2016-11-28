@@ -169,7 +169,11 @@ var smartPlay = function() {
     } else if (main[1][1] === humanLetter && main[2][0] === humanLetter && checkIfEmpty(0,2)) {
       pcUpdateBoard(0,2);
       return;
+    } else if (main[0][2] === humanLetter && main[2][1] === humanLetter && checkIfEmpty(2,2)) {
+      pcUpdateBoard(2,2);
+      return;
     }
+
     //checks for a column play from human
     for(var i = 0; i < 3; i++) {
       if (main[0][i] === humanLetter && main[1][i] === humanLetter && checkIfEmpty(2,i)) {
