@@ -1,9 +1,13 @@
-# tic-tac-toe
+# Tic Tac Toe
 
-#### Fulfill the below user stories. Use whichever libraries or APIs you need. Give it your own personal style.
+This is a Vanilla JavaScript tic tac toe game where you play against the computer and choose whether to play as X or O.
+This was one the first JavaScript app I did so is not super clean and functional code, but I was happy at the time I did it.
+I will probably come back and try to clean up the code and logic later.
 
-User Story: I can play a game of Tic Tac Toe with the computer.
+[Link](https://pablo-jurado.github.io/tic-tac-toe/)
 
-User Story: My game will reset as soon as it's over so I can play again.
+<img src="pablo_jurado_tic_tac_toe.png" alt="pablo jurado tic tac toe">
 
-User Story: I can choose whether I want to play as X or O.
+## Credits
+
+[Pablo Jurado](https://github.com/pablo-jurado)
